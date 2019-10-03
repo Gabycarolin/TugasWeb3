@@ -1,0 +1,48 @@
+<!--<DOCTYPE html> berfungsi untuk memberikan informasi pada web browser bahwa dokumen ini adalah HTML.-->
+<!DOCTYPE html>
+
+<!--<html> Ini adalah tag pembuka dari keseluruhan halaman web, dan akan ditutup dengan tag penutup </html>-->
+<html>
+
+<!--<head> Ini umumnya akan berisi kode seperti CSS dan lainnya yang tidak tampak pada browser.
+    Seperti title yang akan menampilkan judul pada tab browser, dan akan ditutup dengan </head>-->
+
+<head>
+
+    <!--<title></title> merupakan kode yang memerintahakan untuk menampilkan Judul pada tab browser.-->
+    <title>Belajar JavaScript di Jti.polije</title>
+</head>
+<!--1. JavaScript adalah bahasa pemrograman web yang bersifat Client Side Programming Language. Client Side Programming Language adalah tipe bahasa pemrograman yang pemrosesannya dilakukan oleh client. Aplikasi client yang dimaksud merujuk kepada 
+        web browser seperti Google Chrome dan Mozilla Firefox.
+        2. <script type="text/javascript" ini nantinya akan berisikan kode-kode javascript yang terpisah dari tag HTML-->
+<script type="text/javascript">
+    /*disini saya menambahkan function yang bernama tambah_semangat, yang berisikan kode-kode, yang
+    nantinya akan di panggil*/
+    function tambah_semangat() {
+        /*saya mendeklarasikan variabel a dengan value yang berasal dari div_semangat  
+        yangmerupakan selector yang kita gunakan */
+        var a = document.getElementById("div_semangat");
+        /*a.innerhtml ini berfungsi untuk menambah kalimat atau string ke selector yang kita piih*/
+        a.innerHTML += "<p>Sedang Belajar JavaScript, Semangat...!!!</p>";
+    }
+</script>
+</head>
+<!--<body> ini akan berisi semua elemen yang akan tampil pada halaman web, dan ditutup dengan</body>-->
+
+<body>
+    <!--<h1></h1> digunakan untuk menunjukkan bagian yang paling penting (atau tingkat tertinggi) pada halaman web.
+            (biasanya digunakan untuk judul)-->
+    <h1>Belajar JavaScript</h1>
+    <!--<p> berarti membuka sebuah paragraf baru, dan dapat ditutup dengan kode </p>-->
+    <p> Saya sedang belajar JavaScript di jti.polije.com </p>
+    Klik tombol ini untuk menambahkan kalimat baru:
+    <!--1. disini saya menambahkan button id="tambah" yang berarti perintah untuk menambahkan kalimat yang ditentukan 
+        agar apabila di klik button tersebut akan muncul lagi kalimat di bawahnya
+        2. onclick="tambah_semangat" disini yaitu pengaktifan button dan memanggil kode-kode yang terletak
+        pada function tambah_semangat pada javascript diatas.-->
+    <button id="tambah" onclick="tambah_semangat()">Semangaat..!!</button>
+
+    <div id="div_semangat"></div>
+</body>
+
+</html>

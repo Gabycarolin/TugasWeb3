@@ -1,0 +1,50 @@
+<!--halaman 118-->
+<!--<DOCTYPE html> berfungsi untuk memberikan informasi pada web browser bahwa dokumen ini adalah HTML.-->
+<!DOCTYPE html>
+
+<!--<html> Ini adalah tag pembuka dari keseluruhan halaman web, dan akan ditutup dengan tag penutup </html>-->
+<html>
+
+<!--<head> Ini umumnya akan berisi kode seperti CSS dan lainnya yang tidak tampak pada browser.
+        Seperti title yang akan menampilkan judul pada tab browser, dan akan ditutup dengan </head>-->
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--<title></title> merupakan kode yang memerintahakan untuk menampilkan Judul pada tab browser.-->
+    <title>Belajar JavaScript</title>
+
+    <!--peletakan scrip disini agar java scrip diexsekusi setelah html dijalankan-->
+    <script>
+        a = 5;
+        b = 7;
+        c = b / 0;
+        console.log(c); // Hasil: Infinity (division by zero)
+        d = 12 / 0;
+        console.log(d); // Hasil: Infinity (division by zero)
+        e = 1 + Math.pow(10, 309);
+        console.log(e); // Hasil: Infinity (overflow)
+        f = -Math.pow(10, 309) - 1;
+        console.log(f); // Hasil: -Infinity (negative infinity)
+        g = b + e;
+        console.log(g); // Hasil: Infinity (karena e dan b infinity)
+        h = 0 / 0;
+        console.log(h); // Hasil: NaN
+        i = Math.sqrt(-25);
+        console.log(i); // Hasil: NaN (akar kuadrat negatif)
+        j = c / d
+        console.log(j); // Hasil: NaN (c dan d sama-sama bernilai infinity)
+    </script>
+</head>
+<!--<body> ini akan berisi semua elemen yang akan tampil pada halaman web, dan ditutup dengan</body>-->
+
+<body>
+    <!--<h1></h1> digunakan untuk menunjukkan bagian yang paling penting (atau tingkat tertinggi) pada halaman web.
+        (biasanya digunakan untuk judul)-->
+    <h1>Belajar JavaScript</h1>
+    <!--<p> berarti membuka sebuah paragraf baru, dan dapat ditutup dengan kode </p>-->
+    <p> Saya sedang belajar pengertian NaN dan Infinity JavaScript</p>
+
+</body>
+
+</html>
